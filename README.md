@@ -7,18 +7,17 @@ This repository containts an Ethereum DApp that demonstrates a Supply Chain flow
 https://rinkeby.etherscan.io/address/0x2ba67cadea0fee648dc3c01452a86fdb932a0ded
 
 Deploying 'SupplyChain'
-   -----------------------
-   > transaction hash:    0xbf063869b2b7e968285e0b7a0cf699c41c429ace9bf3c3ad7d80905f9e8bbc77
-   > Blocks: 0            Seconds: 12
-   > contract address:    0x2ba67cAdEA0Fee648dC3C01452a86fdB932a0DEd
-   > block number:        6426526
-   > block timestamp:     1588553322
-   > account:             0x860aFa5Ca9282fF145846DF9ED68C0fbda3ACa4A
-   > balance:             10.405828787
-   > gas used:            3063480 (0x2ebeb8)
-   > gas price:           10 gwei
-   > value sent:          0 ETH
-   > total cost:          0.0306348 ETH
+   transaction hash:    0xbf063869b2b7e968285e0b7a0cf699c41c429ace9bf3c3ad7d80905f9e8bbc77
+   Blocks: 0            Seconds: 12
+   contract address:    0x2ba67cAdEA0Fee648dC3C01452a86fdB932a0DEd
+   block number:        6426526
+   block timestamp:     1588553322
+   account:             0x860aFa5Ca9282fF145846DF9ED68C0fbda3ACa4A
+   balance:             10.405828787
+   gas used:            3063480 (0x2ebeb8)
+   gas price:           10 gwei
+   value sent:          0 ETH
+   total cost:          0.0306348 ETH
 
 ## Activity Diagram
 
@@ -142,3 +141,5 @@ See also the list of [contributors](https://github.com/your/project/contributors
 * Ganache-cli
 * Truffle
 * IPFS
+=======
+# CoffeeSupplyChain
