@@ -6,6 +6,7 @@ This repository containts an Ethereum DApp that demonstrates a Supply Chain flow
 
 https://rinkeby.etherscan.io/address/0x2ba67cadea0fee648dc3c01452a86fdb932a0ded
 
+```
 Deploying 'SupplyChain'
    transaction hash:    0xbf063869b2b7e968285e0b7a0cf699c41c429ace9bf3c3ad7d80905f9e8bbc77
    Blocks: 0            Seconds: 12
@@ -18,7 +19,25 @@ Deploying 'SupplyChain'
    gas price:           10 gwei
    value sent:          0 ETH
    total cost:          0.0306348 ETH
+```
 
+## Node Version
+```
+node -v
+v10.20.1
+```
+
+## Truffle Version
+```
+truffle -v
+Truffle v5.1.24 - a development framework for Ethereum
+```
+
+## web3 version number
+```
+npm view web3 version
+1.2.7
+```
 ## Activity Diagram
 
 ![truffle test](uml/activityDiagram.png)
