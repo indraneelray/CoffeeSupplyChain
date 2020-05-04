@@ -53,6 +53,8 @@ contract('SupplyChain', function(accounts) {
         await supplyChain.Harvested(null, (err, data) => {
             eventEmitted = true;
         });
+
+        await supplyChain.addFarmer(originFarmerID, { from: ownerID });
     
         // Mark an item as Harvested by calling function harvestItem()
         await supplyChain.harvestItem(upc, originFarmerID, originFarmName, originFarmInformation, originFarmLatitude, originFarmLongitude, productNotes, { from: originFarmerID });
@@ -130,7 +132,7 @@ contract('SupplyChain', function(accounts) {
         await supplyChain.ForSale(null, (err, res) => {
             eventEmitted = true;
         });
-
+        
         // Mark an item as ForSale by calling function sellItem()
         await supplyChain.sellItem(upc, productPrice, { from: originFarmerID });
 
@@ -154,6 +156,8 @@ contract('SupplyChain', function(accounts) {
         supplyChain.Sold((err, res) => {
             eventEmitted = true;
         })
+
+        await supplyChain.addDistributor(distributorID, { from: ownerID });
         
         // Mark an item as Sold by calling function buyItem()
         await supplyChain.buyItem(upc, {from: distributorID, value: web3.utils.toWei("1", "ether")})
@@ -205,6 +209,8 @@ contract('SupplyChain', function(accounts) {
             eventEmitted = true;
         })
 
+        await supplyChain.addRetailer(retailerID, { from: ownerID });
+
         // Mark an item as received by calling function receiveItem()
         await supplyChain.receiveItem(upc, {from: retailerID})
 
@@ -230,6 +236,8 @@ contract('SupplyChain', function(accounts) {
         supplyChain.Purchased((err, res) => {
             eventEmitted = true;
         })
+
+        await supplyChain.addConsumer(consumerID, { from: ownerID });
 
         // Mark an item as purchased by calling function purchaseItem()
         await supplyChain.purchaseItem(upc, {from: consumerID})

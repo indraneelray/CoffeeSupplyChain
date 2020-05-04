@@ -2,7 +2,7 @@ pragma solidity >=0.5.0;
 import "../coffeebase/SupplyChain.sol";
 
 /// Provides basic authorization control
-contract Ownable is SupplyChain{
+contract Ownable {
     address payable private origOwner;
 
     // Define an Event
