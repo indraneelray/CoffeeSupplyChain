@@ -1,6 +1,6 @@
 const HDWalletProvider = require('truffle-hdwallet-provider');
 
-const infuraKey = "680007c4bb594150a8e83badcc873c24";
+const infuraKey = "";
 
 const mnemonic = "token owner odor angry faint fitness fat sleep glide taste crew shrimp";
 
